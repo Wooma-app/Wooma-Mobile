@@ -56,7 +56,7 @@ struct ReportDetailsView: View {
                 }
             }
             .padding()
-            .background(Color(hex: "#FAFDF8"))
+            .background(Color.woomaBackground)
             
             ScrollView {
                 // Space List Card
@@ -110,7 +110,7 @@ struct ReportDetailsView: View {
                 }
             )
         }
-        .background(Color(hex: "#FAFDF8"))
+        .background(Color.woomaBackground)
         .navigationBarHidden(true)
         .navigationDestination(isPresented: $navigateToEditReport) {
             EditReportView()

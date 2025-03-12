@@ -28,7 +28,7 @@ struct EditReportView: View {
                 Spacer()
             }
             .padding()
-            .background(Color(hex: "FAFDF8"))
+            .background(Color.woomaBackground)
             
             // Property Address Section
             VStack(alignment: .leading, spacing: 8) {
@@ -62,7 +62,7 @@ struct EditReportView: View {
             
             Spacer()
         }
-        .background(Color(hex: "FAFDF8"))
+        .background(Color.woomaBackground)
         .navigationBarHidden(true) // Hide default navigation bar
         // Add alert presentation
         .alert(isPresented: $showingDeleteAlert) {

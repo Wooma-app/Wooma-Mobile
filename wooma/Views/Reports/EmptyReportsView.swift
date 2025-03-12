@@ -28,13 +28,13 @@ struct EmptyReportsView: View {
             // Subtitle
             Text("Lock in your deposit protection in minutes.")
                 .font(.custom("SofiaSans-Regular", size: 18))
-                .foregroundColor(Color(hex: "#6B6B6B"))
+                .foregroundColor(.woomaGray)
                 .multilineTextAlignment(.center)
             
             HStack(spacing: 4) {
                 Text("Quick, simple, done.")
                     .font(.custom("SofiaSans-Regular", size: 18))
-                    .foregroundColor(Color(hex: "6B6B6B"))
+                    .foregroundColor(.woomaGray)
                 
                 Text("🔒")
                     .font(.system(size: 20))
@@ -67,7 +67,7 @@ struct EmptyReportsView: View {
             AppTabBar(selectedTab: 0)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex: "FAFDF8"))
+        .background(Color.woomaBackground)
     }
 }
 

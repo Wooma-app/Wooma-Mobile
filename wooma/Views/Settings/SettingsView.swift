@@ -55,7 +55,7 @@ struct SettingsView: View {
                 }
                 .padding(.horizontal, 24)
             }
-            .background(Color(hex: "#FAFDF8"))
+            .background(Color.woomaBackground)
             
             // Tab bar
             AppTabBar(selectedTab: 3)

@@ -44,7 +44,7 @@ struct ReferView: View {
                     // Subtitle
                     Text("Make sure your mates don't get ripped off. A Wooma report means no deposit drama later.")
                         .font(.custom("SofiaSans-Regular", size: 18))
-                        .foregroundColor(Color(hex: "#606060"))
+                        .foregroundColor(.woomaTextGray)
                         .padding(.horizontal, 24)
                         .padding(.top, 16)
                         .padding(.bottom, 32)
@@ -128,7 +128,7 @@ struct ReferView: View {
                                     
                                     Text("Max 3 reports at a time")
                                         .font(.custom("SofiaSans-Regular", size: 18))
-                                        .foregroundColor(Color(hex: "#606060"))
+                                        .foregroundColor(.woomaTextGray)
                                 }
                                 
                                 Spacer()
@@ -161,7 +161,7 @@ struct ReferView: View {
                 backgroundColor: .woomaGreen
             )
         }
-        .background(Color(hex: "#FAFDF8"))
+        .background(Color.woomaBackground)
         .navigationBarHidden(true)
     }
 }

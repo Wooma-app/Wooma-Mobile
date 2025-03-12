@@ -102,7 +102,7 @@ struct DepositDetailSheet: View {
             }
             .padding(.horizontal, 24)
         }
-        .background(Color(hex: "#FAFDF8"))
+        .background(Color.woomaBackground)
     }
 }
 

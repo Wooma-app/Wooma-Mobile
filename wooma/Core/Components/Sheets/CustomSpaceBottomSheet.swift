@@ -41,7 +41,7 @@ struct CustomSpaceBottomSheet: View {
                 // Title
                 Text("Add a custom space")
                     .font(.custom("SofiaSans-Medium", size: 16))
-                    .foregroundStyle(Color(hex: "#6B6B6B"))
+                    .foregroundStyle(Color.woomaGray)
                     .padding(.horizontal)
                     .padding(.bottom, 20)
                     .frame(maxWidth: .infinity, alignment: .leading)

@@ -90,7 +90,7 @@ struct DeleteAccountView: View {
                 textColor: .white
             )
         }
-        .background(Color(hex: "#FAFDF8"))
+        .background(Color.woomaBackground)
         .navigationBarHidden(true)
         .alert(isPresented: $showAlert) {
             Alert(

@@ -40,7 +40,7 @@ struct SpacesView: View {
                     Spacer()
                 }
                 .padding()
-                .background(Color(hex: "#FAFDF8"))
+                .background(Color.woomaBackground)
                 
                 SpacesTitleSection()
                 
@@ -129,7 +129,7 @@ struct SpacesView: View {
                     }
                 }
             }
-            .background(Color(hex: "#FAFDF8"))
+            .background(Color.woomaBackground)
             .navigationBarHidden(true)
             
             // Custom Space Sheet

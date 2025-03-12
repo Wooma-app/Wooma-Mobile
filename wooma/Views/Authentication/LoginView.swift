@@ -48,7 +48,7 @@ struct LoginView: View {
                 // Text description
                 Text("Wooma helps you keep your money\nwhere it belongs—in your pocket.")
                     .multilineTextAlignment(.leading)
-                    .foregroundColor(Color(hex: "6B6B6B"))
+                    .foregroundColor(.woomaGray)
                     .font(.custom("SofiaSans-Regular", size: 20))
                     .padding(.top, 24)
                     .padding(.horizontal, 30)
@@ -88,7 +88,7 @@ struct LoginView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(hex: "FAFDF8"))
+            .background(Color.woomaBackground)
             .edgesIgnoringSafeArea(.all)
             .navigationBarHidden(true)
             .navigationDestination(isPresented: $navigateToOnboarding) {

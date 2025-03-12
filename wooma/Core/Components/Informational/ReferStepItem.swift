@@ -32,7 +32,7 @@ struct ReferStepItem: View {
                 
                 Text(description)
                     .font(.custom("SofiaSans-Regular", size: 18))
-                    .foregroundColor(Color(hex: "#606060"))
+                    .foregroundColor(.woomaTextGray)
                     .fixedSize(horizontal: false, vertical: true)
             }
             

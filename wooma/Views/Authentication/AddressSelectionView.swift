@@ -123,7 +123,7 @@ struct AddressSelectionView: View {
                     }
                 }
             }
-            .background(Color(hex: "FAFDF8"))
+            .background(Color.woomaBackground)
             .navigationBarHidden(true)
         }
     }

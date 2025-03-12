@@ -20,8 +20,8 @@ struct Report: Identifiable {
 struct ReportListView: View {
     @State private var navigateToReportComplete = false
     let reports: [Report] = [
-        Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "Pending Payment", statusColor: Color(hex: "#FFF8B400"), actionText: " - Tap to Finalise", progress: nil),
-        Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "Upload Failed", statusColor: Color(hex: "E03B3B"), actionText: " - Try Again", progress: nil),
+        Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "Pending Payment", statusColor: .woomaYellow, actionText: " - Tap to Finalise", progress: nil),
+        Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "Upload Failed", statusColor: .woomaTextRed, actionText: " - Try Again", progress: nil),
         Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "20% Done", statusColor: .woomaGreen, actionText: " - Your deposit’s counting on you!", progress: 0.2),
         Report(title: "88 Grape Grove", address: "London, N42 5BA", status: "Complete", statusColor: .woomaGreen, actionText: nil, progress: nil)
     ]
@@ -34,7 +34,7 @@ struct ReportListView: View {
                     HStack {
                         Text("2 unfinished")
                             .font(.custom("SofiaSans-Bold", size: 28))
-                            .foregroundColor(Color(hex: "#FFF8B400"))
+                            .foregroundColor(.woomaYellow)
                             .bold()
                         Text("reports")
                             .font(.custom("SofiaSans-Bold", size: 28))
@@ -44,7 +44,7 @@ struct ReportListView: View {
                     
                     Text("Finish them now and protect your deposit.")
                         .font(.custom("SofiaSans-Bold", size: 16))
-                        .foregroundColor(Color(hex: "#606060"))
+                        .foregroundColor(.woomaTextGray)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading) // Align to the leading edge
                 .padding(.horizontal, 24)
@@ -81,7 +81,7 @@ struct ReportListView: View {
                     AppTabBar(selectedTab: 0)
                 }
             }
-            .background(Color(hex: "#FAFDF8"))
+            .background(Color.woomaBackground)
         }
         .navigationBarHidden(true)
     }

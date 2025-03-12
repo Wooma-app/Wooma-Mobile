@@ -23,7 +23,7 @@ struct HelpView: View {
                         // Subtitle
                         Text("Make sure you don't get ripped off. Landlords hate you knowing your rights. Luckily for you, Wooma's got your back.")
                             .font(.custom("SofiaSans-Regular", size: 18))
-                            .foregroundColor(Color(hex: "#606060"))
+                            .foregroundColor(.woomaTextGray)
                             .padding(.top, 16)
                             .padding(.horizontal, 24)
                             .fixedSize(horizontal: false, vertical: true)
@@ -101,7 +101,7 @@ struct HelpView: View {
                             .frame(height: 80 + bottomSafeArea) // Height of tab bar + safe area
                     }
                 }
-                .background(Color(hex: "#FAFDF8"))
+                .background(Color.woomaBackground)
                 .edgesIgnoringSafeArea(.bottom)
                 .navigationBarHidden(true)
                 

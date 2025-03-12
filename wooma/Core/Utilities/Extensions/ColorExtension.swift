@@ -29,4 +29,7 @@ extension Color {
     static let woomaGray = Color(hex: "6B6B6B")
     static let woomaBackground = Color(hex: "FAFDF8")
     static let woomaErrorRed = Color(hex: "E33D32")
+    static let woomaTextGray = Color(hex: "606060")
+    static let woomaYellow = Color(hex: "F8B400")
+    static let woomaTextRed = Color(hex: "E03B3B")
 }
